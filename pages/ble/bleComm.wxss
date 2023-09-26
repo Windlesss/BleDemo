@@ -1,0 +1,32 @@
+/* ble/bleComm.wxss */
+.devices_info {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+.devices_info_small {
+    margin: 0 10px;
+    font-size: 14px;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.func_btn{
+    float: left;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    color:#00AE5C;
+    border: 1px solid #DDD;
+}
+
+.log_list {
+    height: 400px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    width: 100%;
+  }

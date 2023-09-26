@@ -1,0 +1,26 @@
+<view class="devices_info">蓝牙设备名称: {{deviceName}}</view>
+<view class="devices_info_small">id: {{deviceId}}</view>
+
+<view class="button-container">
+<button class="func_btn" style="width: 140px;margin:10px;" bindtap="connectDevice">连接</button>
+<button  class="func_btn" style="width: 140px;margin:10px;" bindtap="closeConnection">断开连接</button>
+<view   style="width: 140px;margin:15px;" ></view>
+</view>
+
+<view class="button-container">
+<button class="func_btn" style="width: 140px;margin:10px;" bindtap="sendHandShake">发送握手</button>
+<button class="func_btn"  style="width: 140px;margin:10px;" class="func_btn" bindtap="readConfig">读取配置</button>
+<button class="func_btn" style="width: 140px;margin:10px;" bindtap="writeConfig">写入配置</button>
+</view>
+
+<view class="button-container">
+<button class="func_btn" style="width: 140px;margin:10px;" bindtap="clearOutput">清除日志</button>
+<view   style="width: 140px;margin:15px;" ></view>
+<view   style="width: 140px;margin:15px;" ></view>
+</view>
+
+<scroll-view class="log_list" scroll-y scroll-with-animation>
+    <view wx:for="{{logInfo}}" wx:key="index" style="font-size: 12px; margin-top: 3px;">
+    <view>{{item}}</view>
+  </view>
+</scroll-view>
